@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+
+
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="6dp"
+                        android:orientation="horizontal"
+                        android:background="@color/wallpaper"
+                        >
+
+            <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="14dp"
+                    android:paddingLeft="14dp"
+                    android:layout_alignParentLeft="true"
+                    app:srcCompat="@drawable/app_usuario"
+                    android:id="@+id/iconImageView"/>
+
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/Linearlayou"
+                          android:layout_alignParentTop="true"
+                          android:layout_marginStart="4dp"
+                          android:layout_marginTop="2dp"
+                          android:layout_toEndOf="@id/iconImageView"
+                          android:layout_marginLeft="4dp"
+                          android:layout_toRightOf="@id/iconImageView"
+                          android:orientation="vertical">
+
+
+                <TextView android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginBottom="2dp"
+                          android:text="TestCardview"
+                          android:textColor="@color/texto"
+                          android:textSize="24sp"
+                          android:textStyle="bold"
+                          android:id="@+id/nombrePaciente"
+                />
+
+                <TextView android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:text="Ortodoncia"
+                          android:textSize="18sp"
+                          android:textColor="@color/texto"
+                          android:id="@+id/tratamiento"
+                />
+
+
+
+
+            </LinearLayout>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginEnd="6dp"
+                      android:layout_marginRight="6dp"
+                      android:text="Lunes"
+                      android:textSize="20sp"
+                      android:textStyle="italic"
+                      android:textColor="@color/texto"
+                      android:layout_alingParentRight="true"
+                      android:layout_alignParentEnd="true"
+                      android:id="@+id/dia"
+            />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

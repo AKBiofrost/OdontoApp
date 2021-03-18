@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#23292D</color>
+    <color name="colorPrimaryDark">#23292D</color>
+    <color name="colorAccent">#23292D</color>
+    <color name="SombraMorada">#F401BF</color>
+    <color name="wallpaper">#23292D</color>
+    <color name="WallpaperInterno">#394147</color>
+    <color name="texto">#FFFFFF</color>
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+              android:layout_width="match_parent"
+        android:background="@color/wallpaper"
+              android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:background="@drawable/app_submenu"
+            android:layout_width="417dp"
+            android:layout_height="278dp"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="3dp"
+            app:layout_constraintStart_toStartOf="parent"
+    >
+
+        <ImageButton
+                android:layout_width="58dp"
+                android:layout_height="51dp"
+                android:background="@color/wallpaper"
+                app:srcCompat="@drawable/btn_editar"
+                tools:layout_editor_absoluteY="130dp"
+                android:id="@+id/imageButton" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="16dp"/>
+        <ImageButton
+                android:layout_width="58dp"
+                android:layout_height="51dp"
+                android:background="@color/wallpaper"
+                app:srcCompat="@drawable/btn_consultar"
+                tools:layout_editor_absoluteY="55dp"
+                tools:layout_editor_absoluteX="92dp"
+                android:id="@+id/imageButton2"/>
+        <ImageButton
+                android:layout_width="58dp"
+                android:layout_height="51dp"
+                android:background="@color/wallpaper"
+                app:srcCompat="@drawable/btn_chatear"
+                tools:layout_editor_absoluteY="55dp"
+                tools:layout_editor_absoluteX="258dp"
+                android:id="@+id/imageButton3"/>
+        <ImageButton
+                android:layout_width="58dp"
+                android:layout_height="51dp"
+                android:background="@color/wallpaper"
+                app:srcCompat="@drawable/btn_detallesconsulta"
+                tools:layout_editor_absoluteY="146dp"
+                tools:layout_editor_absoluteX="350dp"
+                android:id="@+id/imageButton4"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

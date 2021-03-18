@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/mainactivity2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/wallpaper"
+        >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/tablero"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="31dp"
+            android:layout_marginEnd="21dp"
+            android:layout_marginBottom="31dp"
+            android:background="@drawable/app_wallpaper"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout4"
+                android:layout_width="278dp"
+                android:layout_height="397dp"
+                android:layout_marginStart="63dp"
+                android:layout_marginTop="115dp"
+                android:layout_marginEnd="63dp"
+                android:layout_marginBottom="148dp"
+                android:background="@drawable/app_marco_interno_dashboard"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+            <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent">
+
+                <TableRow >
+
+                    <ImageButton
+                            android:src="@drawable/btn_paciente"
+                            android:background="@color/wallpaper"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:layout_editor_absoluteY="68dp"
+                            tools:layout_editor_absoluteX="42dp"
+                            android:id="@+id/btn_paciente"
+                            android:contentDescription="TODO"
+                            tools:ignore="ContentDescription,HardcodedText"/>
+
+                    <TextView
+                            android:text="@string/espacio"
+                            android:textColor="@color/wallpaper"
+                            android:textSize="15sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:layout_editor_absoluteY="37dp"
+                            tools:layout_editor_absoluteX="131dp"
+                            android:id="@+id/vacio"/>
+
+
+                    <ImageButton
+                            android:src="@drawable/btn_agenda"
+                            android:foregroundGravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/wallpaper"
+                            tools:layout_editor_absoluteY="68dp"
+                            tools:layout_editor_absoluteX="42dp"
+                            android:id="@+id/btn_agenda" android:contentDescription="TODO"
+                            tools:ignore="ContentDescription,HardcodedText"/>
+
+
+                </TableRow>
+
+                <TableRow>
+
+
+                    <TextView
+                            android:text="Paciente"
+                            android:textColor="@color/texto"
+                            android:textSize="15sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:layout_editor_absoluteY="37dp"
+                            tools:layout_editor_absoluteX="131dp"
+                            android:id="@+id/AgregarPaciente" tools:ignore="HardcodedText"/>
+
+
+                    <TextView
+                            android:text="espacio"
+                            android:textColor="@color/wallpaper"
+                            android:textSize="15sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:layout_editor_absoluteY="37dp"
+                            tools:layout_editor_absoluteX="131dp"
+                            android:id="@+id/vacio5" tools:ignore="HardcodedText"/>
+
+
+                    <TextView
+                            android:text="Agenda"
+                            android:textColor="@color/texto"
+                            android:textSize="15sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:layout_editor_absoluteY="37dp"
+                            tools:layout_editor_absoluteX="131dp"
+                            android:id="@+id/agenda" tools:ignore="HardcodedText"/>
+
+
+
+                </TableRow>
+
+                <TableRow>
+
+                    <ImageButton
+                            android:src="@drawable/btn_cirugia_dental"
+                            android:layout_gravity="center"
+                            android:background="@color/wallpaper"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:layout_editor_absoluteY="68dp"
+                            tools:layout_editor_absoluteX="42dp"
+                            android:id="@+id/btn_inventario" tools:ignore="ContentDescription"/>
+
+
+
+                    <TextView
+                            android:text="espacio"
+                            android:textColor="@color/wallpaper"
+                            android:textSize="15sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:layout_editor_absoluteY="37dp"
+                            tools:layout_editor_absoluteX="131dp"
+                            android:id="@+id/vacio3" tools:ignore="HardcodedText"/>
+
+                    <ImageButton
+                            android:src="@drawable/btn_analgesico"
+                            android:layout_gravity="center"
+                            android:background="@color/wallpaper"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:layout_editor_absoluteY="68dp"
+                            tools:layout_editor_absoluteX="42dp"
+                            android:id="@+id/btn_informe" android:contentDescription="TODO"
+                            tools:ignore="ContentDescription,HardcodedText"/>
+
+                </TableRow>
+
+                <TableRow>
+
+
+                    <TextView
+                            android:text="@string/inventario"
+                            android:textColor="@color/texto"
+                            android:textSize="15sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:layout_editor_absoluteY="37dp"
+                            tools:layout_editor_absoluteX="131dp"
+                            android:id="@+id/inventario"/>
+
+
+                    <TextView
+                            android:text="espacio"
+                            android:textColor="@color/wallpaper"
+                            android:textSize="15sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:layout_editor_absoluteY="37dp"
+                            tools:layout_editor_absoluteX="131dp"
+                            android:id="@+id/vacio1" tools:ignore="HardcodedText"/>
+
+                    <TextView
+                            android:text="Informe"
+                            android:textColor="@color/texto"
+                            android:textSize="15sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:layout_editor_absoluteY="37dp"
+                            tools:layout_editor_absoluteX="131dp"
+                            android:id="@+id/Informes" tools:ignore="HardcodedText"/>
+
+
+                </TableRow>
+
+                <TableRow>
+                    <ImageButton
+                            android:src="@drawable/btn_diente_boton"
+                            android:background="@color/wallpaper"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:layout_editor_absoluteY="68dp"
+                            tools:layout_editor_absoluteX="42dp"
+                            android:id="@+id/btn_tratamiento" tools:ignore="ContentDescription"/>
+
+                    <TextView
+                            android:text="  "
+                            android:textColor="@color/texto"
+                            android:textSize="15sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:layout_editor_absoluteY="37dp"
+                            tools:layout_editor_absoluteX="131dp"
+                            android:id="@+id/vacio2" tools:ignore="HardcodedText"/>
+
+                    <ImageButton
+                            android:src="@drawable/btn_precio"
+                            android:background="@color/wallpaper"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:layout_editor_absoluteY="68dp"
+                            tools:layout_editor_absoluteX="42dp"
+                            android:id="@+id/btn_analgesico" android:contentDescription="TODO"
+                            tools:ignore="ContentDescription,HardcodedText"/>
+
+
+
+
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                            android:text="Tratamiento"
+                            android:textSize="15sp"
+                            android:textColor="@color/texto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:layout_editor_absoluteY="37dp"
+                            tools:layout_editor_absoluteX="131dp"
+                            android:id="@+id/tratamiento" tools:ignore="HardcodedText"/>
+
+
+
+                    <TextView
+                            android:text="espacio"
+                            android:textColor="@color/wallpaper"
+                            android:textSize="15sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:layout_editor_absoluteY="37dp"
+                            tools:layout_editor_absoluteX="131dp"
+                            android:id="@+id/vacio4" tools:ignore="HardcodedText"/>
+
+
+                    <TextView
+                            android:text="Precios"
+                            android:textColor="@color/texto"
+                            android:textSize="15sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            tools:layout_editor_absoluteY="37dp"
+                            tools:layout_editor_absoluteX="131dp"
+                            android:id="@+id/precio" tools:ignore="HardcodedText"/>
+
+
+
+
+
+                </TableRow>
+
+
+
+
+
+
+
+            </TableLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
